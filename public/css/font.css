@@ -1,0 +1,75 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 21, 2021, 9:30:10 PM
+    Author     : lilli
+*/
+
+
+
+@font-face{
+    
+    font-family: 'blackmango';
+    src: url(fonts/TTF/BlackMango-SemiBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+
+@font-face{
+    
+    font-family: 'ropers';
+    src: url(fonts/Ropers-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+
+@font-face{
+    
+    font-family: 'chromatica';
+    src: url(fonts/chromatica/Chromatica-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+@font-face{
+    
+    font-family: 'psyche';
+    src: url(fonts/psychelover.otf);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+@font-face{
+    
+    font-family: 'suika';
+    src: url(fonts/suika.otf);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+@font-face{
+    
+    font-family: 'juana';
+    src: url(fonts/juanaFont/juanamedium.otf);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+@font-face{
+    
+    font-family: 'juanaLight';
+    src: url(fonts/juanaFont/juanalight.otf);
+    font-style: normal;
+    font-weight: normal;
+    
+}

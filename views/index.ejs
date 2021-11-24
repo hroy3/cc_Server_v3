@@ -1,0 +1,123 @@
+<!-- CC Landing Page: Login and Signup -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content  = "width=device-width, initial-scale = 1.0">
+        <title>login / sign up</title>
+
+        <!--Link to CSS stylesheet-->
+        <link rel="stylesheet" href="../public/css/index_styles.css">
+        <!-- <link rel="stylesheet"  type="text/css" href="../public/css/font.css" />  -->
+        <!--the font css thing for the fonts i used-->
+        <!-- <link rel ="icon" href="newtablogo.png">  -->
+        <!--the icon that goes on the tab u know like where it'll say "login / sign up"-->
+
+        <!--Link to JS file-->
+        <script src = "../public/js/login.js" defer></script>
+    </head>
+
+    <body>
+        <h1 onclick="location.href = 'homepage.html';">course connections</h1> <!--changed to h1 bc it seemed bigger idk u can change it back if u want!-->
+        <!--Create Log In Form-->
+        <div class = "container">
+
+            <form class="login" id = "login"> 
+                <!--Login  Form Title-->
+                <div class = "title_text">
+                    <div class = "login_title">log in</div>
+                </div>
+                <!--Error Message-->
+                <div class = "login_form_error"></div>
+
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" id = "studentID" placeholder="student id" required>
+                </div>
+                <div class = "input_login-group">
+                    <input type = "password" class = "input_login" id = "password" placeholder="password" required>
+                </div>
+                <!--Log In Button-->
+                <!-- <button class = "login_button" type ="submit">log in</button> -->
+
+                <!-- New login button takes user to home page while text is typed into form fields -->
+                <!-- However, it does not submit form data, so if we want the info typed in to be sent to the database
+                if we connect it later, we will need to change this again -->
+                <input type = "button" class = "login_button" value = "log in" onclick="location.href = 'homepage.html';">
+
+                <!--Create Forgot Password and Create Account Links-->
+                <p class = login_text>
+                    <!--TODO: Create link to forgot password page and replace href = #-->
+                    <a href ="#" class = "form_link" style=" font-family: 'chromatica';">forgot your password?</a>
+                </p>
+                <p class = login_text>
+                    <a href ="#signup" class = "form_link" id = "signup_link" style=" font-family: 'chromatica';">new user? create an account.</a>
+                </p>
+            </form>
+
+            <!-- Create Sign Up Section -->
+            <form class="signup form_hidden" id = "signup"
+                method = "post"
+                action = "/createaccount/"
+            > 
+                <!--Signup Form Title-->
+                <div class = "title_text">
+                    <div class = "signup_title">sign up</div>
+                </div>
+
+                <!--Error Message-->
+                <div class = "login_form_error"></div>
+
+                <!-- Create Input Fields -->
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" id = "studentID" placeholder="Student ID" name = "StudentID" required>
+                </div>
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" id = "first_name" placeholder="First Name" name = "FirstName" required>
+                </div>
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" id = "last_name" placeholder="Last Name" name = "LastName" required>
+                </div>
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" id = "email" placeholder="Email Address" name = "Email" required>
+                </div>
+                <div class = "input_login-group">
+                    <input type = "password" class = "input_login" id = "password" placeholder="Password" required>
+                </div>
+                <div class = "input_login-group">
+                    <input type = "password" class = "input_login" id = "password" placeholder="Confirm Password" required>
+                </div>
+
+                <!-- Select University Dropdown -->
+                <select class = "select_uni" name = "School">
+                    <option disabled selected>choose university</option>
+                    <option value = "Oakland University">oakland university, mi</option>
+                </select>
+
+                <!-- Select State Dropdown -->
+                <select class = "select_state" name = "State">
+                    <option disabled selected>state</option>
+                    <option value = "mi">mi</option>
+                </select>
+
+                <!-- Select Account Type -->
+                <select class = "select_type" name = "UserType">
+                    <option disabled selected>account type</option>
+                    <option value = "student">student</option>
+                    <option value = "instructor">instructor</option>
+                </select>
+
+                <!--Create Account Button-->
+                <!-- <button class = "login_button" type ="submit" style=" font-family: 'chromatica';" >create account</button> -->
+                <input type = "submit" class = "login_button" style=" font-family: 'chromatica';"value = "create account"/>
+
+
+                <p class = login_text>
+                    <a href ="#login" class = "form_link" id = "login_link" style=" font-family: 'chromatica';">have an account? sign in.</a>
+                </p>
+
+            </form>
+        </div>
+
+    </body>
+</html>
