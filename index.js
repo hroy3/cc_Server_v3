@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 
 //homepage route
 app.get("/home", (req, res) =>{
-    res.render("./html/home");
+    res.render("home");
 });
 
 app.get("/calendar", (req, res) =>{
@@ -71,10 +71,27 @@ app.get("/group", (req, res) =>{
 //           throw err;
 //         }
 //       //  res.send(`User Account Created.`);
-          res.redirect('/home');
+          // res.redirect('/home');
 //       });
 //       console.log(data);
 // });
+
+//Enter courses in Home Page
+
+// app.post("/entercourses", (req, res) => {
+//   let coursedata = {StudentID: req.body.StudentID, class: req.body.class1, class: req.body.class2, 
+//        class: req.body.class3, class: req.body.class4, class: req.body.class5}
+//     let sql = `INSERT INTO class SET ?`;
+//     let query = db.query(sql, coursedata, (err, result) => {
+//       if (err) {
+//               throw err;
+//             }
+//         });
+//       console.log(coursedata);
+// });
+
+
+
 // //Kaya: End Uncomment
 
 

@@ -68,7 +68,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div class="dropdown-content">
                     <a href="#"  onclick="location.href = 'flashcards';">study</a>
                     <a href="#" onclick="location.href = 'calendar';">calendar</a>
-                    <a href="#" onclick="location.href = 'message.html';">group</a>
+                    <a href="#" onclick="location.href = 'group';">group</a>
                     <a href="#"  onclick="location.href = 'addfriends';">friends</a>
                 </div>  
 
@@ -101,20 +101,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div class="w3-twothird">
                     <h1 style="font-family: juana;">what classes are you currently taking?</h1>
                     <h5 class="w3-padding-32">
-                        <form>
+                        <form 
+                            id = "enter_courses"
+                            method = "post"
+                            action = "/entercourses/"
+                            >
+                            <label for = "coursesID">enter student ID:</label><br>
+                            <input type ="text" name = "StudentID"><br>
+
                             <label for="class1">class 1:</label><br>
                             <input type="text" id="class1" name="class1"><br>
-                            <label for="class1">class 2:</label><br>
+                            <label for="class2">class 2:</label><br>
                             <input type="text" id="class2" name="class2"><br>
-                            <label for="class1">class 3:</label><br>
-                            <input type="text" id="class1" name="class1"><br>
-                            <label for="class1">class 4:</label><br>
-                            <input type="text" id="class1" name="class1"><br> 
-                            <label for="class1">class 5:</label><br>
-                            <input type="text" id="class1" name="class1"><br>
+                            <label for="class3">class 3:</label><br>
+                            <input type="text" id="class3" name="class3"><br>
+                            <label for="class4">class 4:</label><br>
+                            <input type="text" id="class4" name="class4"><br> 
+                            <label for="class5">class 5:</label><br>
+                            <input type="text" id="class5" name="class5"><br>
                             <input type="submit" value="Submit">
 
                         </form></h5>
+
 
                     <p class="w3-text-grey"></p>
                 </div>
