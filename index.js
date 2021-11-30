@@ -71,7 +71,7 @@ app.get("/group", (req, res) =>{
 //           throw err;
 //         }
 //       //  res.send(`User Account Created.`);
-          // return res.redirect('./html/home');
+          res.redirect('/home');
 //       });
 //       console.log(data);
 // });
