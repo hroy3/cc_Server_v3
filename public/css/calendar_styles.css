@@ -1,0 +1,199 @@
+/* Calendar Stylesheet */
+
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: rgb(191, 220, 247);;
+  }
+
+ 
+  
+#search_bar {
+  display: absolute;
+  border-radius: 50px;
+  width: 400px;
+  height: 40px;
+  top: 50px;
+}
+
+h1 {
+  position: absolute;
+  top: 75px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  clear: both;
+}
+
+.select_month_year select {
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+  button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+
+  #header {
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #header button {
+    background-color:#92a1d1;
+  }
+
+  #container {
+    position: absolute;
+    /* background: linear-gradient(lightblue, blue); */
+    top: 170px;
+    width: 770px;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: #247BA0;
+  }
+  #weekdays div {
+    width: 100px;
+    padding: 10px;
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+#daySquare {
+  background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+}
+
+  .day {
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+  }
+  #daySquare:hover {
+    background-color: #c2fdff;
+  }
+  
+  .day + #currentDay {
+    background-color:#ffffff;
+  }
+
+  .day + #currentDay:hover {
+    background-color:#c2fdff;
+  }
+  .event {
+    font-size: 10px;
+    padding: 3px;
+    /* background-color: #58bae4; */
+    color: white;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  
+
+  .padding {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+  }
+  #createNewEvent, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background: rgba(255, 255, 255, .7);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+  }
+
+  #eventTitleInput, #eventLocationInput, #eventDescriptionInput, .selectMenu {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+
+  #eventColorBox{
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+  }
+
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+  }
+  #saveButton, #closeButton, #editButton {
+    background-color: #92a1d1;
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #eventBackground {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }

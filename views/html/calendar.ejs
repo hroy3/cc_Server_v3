@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+
+        <script src="https://kit.fontawesome.com/a9c3ea6bcb.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet"  type="text/css" href="font.css" />
+        <link rel ="icon" href="../../public/img/newtablogo.png">
+        
+        <link rel = "stylesheet" href = "../../public/css/calendar_styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src = "../../public/js/calendar.js" defer></script>
+    </head>
+
+    <body>
+
+        <button  onclick="location.href = 'home';" 
+            style="font-family: chromatica; float:left; color:black; border-color: thistle; border-radius: 5px;" 
+             >←home   </button>
+         <h1>calendar</h1>
+
+         <!-- <div id = "search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+           <input id = "search_bar" type = "search" placeholder="search">
+         </div> -->
+
+         <div id="container">
+            <div id="header">
+              <div id="monthDisplay"></div>
+              <div>
+                <button id="backButton">Back</button>
+                <button id="nextButton">Next</button>
+                <!-- <div id = "backButton">Previous</div>
+                <div id = "nextButton">Next</div> -->
+              </div>
+            </div>
+      
+            <div id="weekdays">
+              <div>Sunday</div>
+              <div>Monday</div>
+              <div>Tuesday</div>
+              <div>Wednesday</div>
+              <div>Thursday</div>
+              <div>Friday</div>
+              <div>Saturday</div>
+            </div>
+      
+            <div id="calendar"></div>
+          </div>
+      
+
+          <!-- New Event Modal -->
+          <div id='createNewEvent'>
+            <fieldset style='padding:0 20px 20px 20px'>
+              <legend>
+                <h2> New Event </h2>
+              </legend>
+              <form name='newEventForm'>
+                <table>
+                  <tr>
+                    <!-- Event Name -->
+                    <td>Name:</td>
+                    <td><input id="eventTitleInput" placeholder="Event Title" required></td>
+                  </tr>
+                  <tr>
+                    <td>Location:</td>
+                    <td><input id = "eventLocationInput" placeholder="Event Location"></td>
+                  </tr>
+                  <tr>
+
+                    <td>Details:</td>
+                    <td><input id = "eventDescriptionInput" placeholder = "Event Description"></td>
+                  </tr>
+                  <!-- <tr>
+                    <td>Time:</td>
+                    <td><input type = "time" id = "eventTimeInput"></td>
+                  </tr> -->
+                  <tr>
+                    <!-- Select Event Type -->
+                    <td>Type:</td>
+                    <td style="display: flex;">
+                      <select class="selectMenu" id="eventType" name="eventType" onchange="displayCol()" required>
+                      <option default disabled selected>Select Event Type</option>
+                      <option value="Social">Social</option>
+                      <option value="Study">Study</option>
+                      </select>
+                      <div id="eventColorBox"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <button id="saveButton">Save</button>
+                    <button id="cancelButton">Cancel</button>
+                  </tr>
+                </table>
+              </form>
+            </fieldset>
+          </div>
+      
+          <!-- View and Delete Event Pop Up -->
+          <div id="deleteEventModal">
+            
+            <fieldset style='padding:0 20px 20px 20px'>
+                <legend>
+                  <h2>Event</h2>
+                </legend>
+                <br>
+                <span>Event Title: </span>
+              <span id="eventText"></span>
+              <br>
+              <span>Location: </span>
+              <span id = "eventLocation"></span>
+              <br>
+              <span>Details: </span>
+              <span id = "eventDescription"></span>
+              <br>
+              <span>Event Type: </span>
+              <span id = "eventTypeSelected"></span>
+              <div id = "eventColorBox"></div>
+        
+              <button id="deleteButton">Delete</button>
+              <button id="closeButton">Close</button>
+              <!-- <button id = "editButton">Edit</button> -->
+            </fieldset>
+            
+
+            
+          </div>
+      
+          <div id="eventBackground"></div>
+
+          <aside>
+              <form class = "select_month_year">
+                  <label class = "label_month" for = "month" >jump to: month</label>
+                  <select name ="month" id = "select_month" onchange="jump()"></select>
+
+                  <label class = "label_year" for = "year">year</label>
+                  <select name="year" id="select_year" onchange="jump()"></select>
+              </form>
+          </aside>
+          
+    </body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<!--i feel like i should write notes on what was changed-->
+<!--just made all the words lowercase--> 
+<!--made the font match the homepage-->
+<!--made the corners round bc hannah has her's like that is all-->
+<!--logo to go back to homepage thing-->
+<!--background color which is rgb(191,220,247) OR #BFDCF7-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../public/css/addfriends_styles.css">
+        <script src="../../public/js/addfriends.js"></script>
+
+
+        <link rel="stylesheet"  type="text/css" href="../../public/css/font.css" /><!--the font css thing for the fonts i used-->
+        <link rel ="icon" href="../../public/img/newtablogo.png"> <!--the icon that goes on the tab u know like where it'll say "login / sign up"-->
+
+        <title>add friends</title>
+
+    </head>
+
+    <body style=" background: #BFDCF7;" > <!-- changed the background color-->
+
+        <div class="navbar">
+
+            <!-- <a href="Course_Connection-HomePage/HomePage/homepage.html">Course Connections HomePage</a> -->
+
+            <button class= "navbar" onclick="location.href = 'home';" style="font-family: chromatica; cursor:pointer; background-color: whitesmoke; border-color: thistle; border-radius: 5px;"  >←home</button>
+
+            <!-- instead of clicking the words to go back to the homepage i put the logo there instead! idk how to get it go to the right tho
+            :/ you can change it back ofc if u want to btw! -->
+
+        </div>
+        <br>
+
+        <div id="error"></div>
+        <form id="form" action="addfriends" method="GET">
+            <h1>add a friend</h1>
+
+            <!-- name -->
+            <div>
+                <label for="name">name</label><br>
+                <input id="name" name="name" type="text" required><br><br>
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email">email</label><br>
+                <input id="email" name="email" type="email"><br><br>
+            </div>
+
+            <!-- buttons -->
+            <button type="submit">add</button>
+            <button type="reset">clear</button>
+        </form>
+
+
+    </body>
+</html>

@@ -7,21 +7,24 @@ const ejs = require("ejs");
 const app = express();
 
 //database connection config
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'Course_Connect'
-});
+// //Kaya: Start Uncomment
+// const db = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+// //Kaya: Enter Database Password
+//     password: '',
+//     database: 'Course_Connect'
+// });
 
-//connect to db
-db.connect((err) => {
-    if (err) {
-      throw err;
-    } else {
-      console.log(`Connected to the Database....`);
-    }
-  });
+// //connect to db
+// db.connect((err) => {
+//     if (err) {
+//       throw err;
+//     } else {
+//       console.log(`Connected to the Database....`);
+//     }
+//   });
+// //Kaya: End uncomment
 
 //body parser
 app.use(express.json());
@@ -36,18 +39,43 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.post("/createaccount", (req, res) => {
-    let data = { studentID: req.body.StudentID, FirstName: req.body.FirstName, LastName: req.body.LastName, 
-        School: req.body.School, State: req.body.State, Email: req.body.Email, UserType: req.body.UserType };
-    let sql = `INSERT INTO Accounts SET ?`;
-    let query = db.query(sql, data, (err, result) => {
-        if (err) {
-          throw err;
-        }
-        res.send(`User Account Created.`);
-      });
-      console.log(data);
+//homepage route
+app.get("/home", (req, res) =>{
+    res.render("./html/home");
 });
+
+app.get("/calendar", (req, res) =>{
+  res.render("./html/calendar");
+});
+
+app.get("/flashcards", (req, res) =>{
+  res.render("./html/flashcards");
+});
+
+app.get("/addfriends", (req, res) =>{
+  res.render("./html/addfriends");
+});
+
+
+app.get("/group", (req, res) =>{
+  res.render("./html/group");
+});
+
+// //Kaya: Start Uncomment
+// app.post("/createaccount", (req, res) => {
+//     let data = { studentID: req.body.StudentID, FirstName: req.body.FirstName, LastName: req.body.LastName, 
+//         Password: req.body.Password, School: req.body.School, State: req.body.State, Email: req.body.Email, UserType: req.body.UserType };
+//     let sql = `INSERT INTO Accounts SET ?`;
+//     let query = db.query(sql, data, (err, result) => {
+//         if (err) {
+//           throw err;
+//         }
+//       //  res.send(`User Account Created.`);
+          // return res.redirect('./html/home');
+//       });
+//       console.log(data);
+// });
+// //Kaya: End Uncomment
 
 
 //start server: in terminal, type node index

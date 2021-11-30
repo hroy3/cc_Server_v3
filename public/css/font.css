@@ -12,7 +12,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'blackmango';
-    src: url(fonts/TTF/BlackMango-SemiBold.ttf);
+    /* src: url(fonts/TTF/BlackMango-SemiBold.ttf); */
+    src: url(../fonts/TTF/BlackMango-SemiBold.ttf);
     font-style: normal;
     font-weight: normal;
     
@@ -22,7 +23,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'ropers';
-    src: url(fonts/Ropers-Regular.ttf);
+    /* src: url(fonts/Ropers-Regular.ttf); */
+    src: url(../fonts/Ropers-Regular.ttf);
     font-style: normal;
     font-weight: normal;
     
@@ -32,7 +34,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'chromatica';
-    src: url(fonts/chromatica/Chromatica-Regular.otf);
+    /* src: url(fonts/chromatica/Chromatica-Regular.otf); */
+    src: url(../fonts/chromatica/Chromatica-Regular.otf);
     font-style: normal;
     font-weight: normal;
     
@@ -41,7 +44,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'psyche';
-    src: url(fonts/psychelover.otf);
+    /* src: url(fonts/psychelover.otf); */
+    src: url(../fonts/psychelover.otf);
     font-style: normal;
     font-weight: normal;
     
@@ -50,7 +54,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'suika';
-    src: url(fonts/suika.otf);
+    /* src: url(fonts/suika.otf); */
+    src: url(../fonts/suika.otf);
     font-style: normal;
     font-weight: normal;
     
@@ -59,7 +64,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'juana';
-    src: url(fonts/juanaFont/juanamedium.otf);
+    /* src: url(fonts/juanaFont/juanamedium.otf); */
+    src: url(../fonts/juanaFont/juanamedium.otf);
     font-style: normal;
     font-weight: normal;
     
@@ -68,7 +74,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @font-face{
     
     font-family: 'juanaLight';
-    src: url(fonts/juanaFont/juanalight.otf);
+    /* src: url(fonts/juanaFont/juanalight.otf); */
+    src: url(../fonts/juanaFont/juanalight.otf);
     font-style: normal;
     font-weight: normal;
     

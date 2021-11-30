@@ -9,7 +9,7 @@
 
         <!--Link to CSS stylesheet-->
         <link rel="stylesheet" href="../public/css/index_styles.css">
-        <!-- <link rel="stylesheet"  type="text/css" href="../public/css/font.css" />  -->
+        <link rel="stylesheet"  type="text/css" href="../public/css/font.css" /> 
         <!--the font css thing for the fonts i used-->
         <!-- <link rel ="icon" href="newtablogo.png">  -->
         <!--the icon that goes on the tab u know like where it'll say "login / sign up"-->
@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <h1 onclick="location.href = 'homepage.html';">course connections</h1> <!--changed to h1 bc it seemed bigger idk u can change it back if u want!-->
+        <h1 onclick="location.href = 'home';">course connections</h1> <!--changed to h1 bc it seemed bigger idk u can change it back if u want!-->
         <!--Create Log In Form-->
         <div class = "container">
 
@@ -38,12 +38,13 @@
                     <input type = "password" class = "input_login" id = "password" placeholder="password" required>
                 </div>
                 <!--Log In Button-->
-                <!-- <button class = "login_button" type ="submit">log in</button> -->
+                <button class = "login_button" type ="submit" value = "log in" onclick="location.href = 'home';" >log in</button>
 
                 <!-- New login button takes user to home page while text is typed into form fields -->
                 <!-- However, it does not submit form data, so if we want the info typed in to be sent to the database
                 if we connect it later, we will need to change this again -->
-                <input type = "button" class = "login_button" value = "log in" onclick="location.href = 'homepage.html';">
+                
+                <!-- <input type = "button" class = "login_button" value = "log in" onclick="location.href = 'home';"> -->
 
                 <!--Create Forgot Password and Create Account Links-->
                 <p class = login_text>
@@ -82,7 +83,7 @@
                     <input type = "text" class = "input_login" id = "email" placeholder="Email Address" name = "Email" required>
                 </div>
                 <div class = "input_login-group">
-                    <input type = "password" class = "input_login" id = "password" placeholder="Password" required>
+                    <input type = "password" class = "input_login" id = "password" placeholder="Password" name = "Password" required>
                 </div>
                 <div class = "input_login-group">
                     <input type = "password" class = "input_login" id = "password" placeholder="Confirm Password" required>

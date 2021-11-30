@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../public/css/flashcards_styles.css">
+        <link rel="stylesheet"  type="text/css" href="../../public/css/font.css" /> <!--the font css thing for the fonts i used-->
+        <link rel ="icon" href="../../public/img/newtablogo.png"> <!--the icon that goes on the tab u know like where it'll say "login / sign up"-->
+
+
+        <title>study</title>
+
+    </head>
+    <body>
+
+  
+        
+        <main>
+
+            <header>
+                <div class="container">
+                    <div id="header">
+                        <button class= "navbar" onclick="location.href = 'home';" style="font-family: chromatica;"  >←home</button>
+                        <h2 style="font-family: juana;">flashcards</h2>
+
+                        <div>
+                            <button id="show_card_box">add card</button>
+                            <button id="delete_cards">delete cards</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class="container">
+                    <div id="create_card">
+                        <h2>create flashcard</h2>
+                        <label for="question">question</label>
+                        <textarea id="question" maxlength="280"></textarea>
+                        <label for="answer" >answer</label>
+                        <br>
+                        <textarea id="answer" maxlength="280"></textarea>
+                        <div>
+                            <button id="save_card">save</button> <button id="close_card_box">close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div id="flashcards"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="../../public/js/flashcards.js"></script>
+    </body>
+</html>
+
