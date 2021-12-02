@@ -118,7 +118,7 @@ h1 {
   }
   
   .day + #currentDay {
-    background-color:#ffffff;
+    background-color:#d0fffd;
   }
 
   .day + #currentDay:hover {

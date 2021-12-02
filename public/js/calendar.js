@@ -15,30 +15,29 @@ let eventDescriptionInput = document.getElementById('eventDescriptionInput');
 let eventTypeSelected = document.getElementById('eventTypeSelected');
 let eventType = document.getElementById('eventType');
 
-// var eventTypeOptions = ["Social", "Study"];
 
-var yearOptions = ["2021", "2022", "2023", "2024"];
+// var yearOptions = ["2021", "2022", "2023", "2024"];
 
-var monthOptions = ["January", "February", "March", "April","May", "June","July","August","September", 
-  "October", "November", "December"];
+// var monthOptions = ["January", "February", "March", "April","May", "June","July","August","September", 
+//   "October", "November", "December"];
 
-let selectYear = document.getElementById("select_year");
-let selectMonth = document.getElementById("select_month");
-let MonthandYear = document.getElementById("select_month_year");
+// let selectYear = document.getElementById("select_year");
+// let selectMonth = document.getElementById("select_month");
+// let MonthandYear = document.getElementById("select_month_year");
 
-for (let i = 0; i < yearOptions.length; i++){
-  let newOption = document.createElement("option");
-  newOption.innerText = yearOptions[i];
-  newOption.setAttribute("value", yearOptions[i]);
-  selectYear.appendChild(newOption);
-}
+// for (let i = 0; i < yearOptions.length; i++){
+//   let newOption = document.createElement("option");
+//   newOption.innerText = yearOptions[i];
+//   newOption.setAttribute("value", yearOptions[i]);
+//   selectYear.appendChild(newOption);
+// }
 
-for (let i = 0; i < monthOptions.length; i++){
-  let newOption = document.createElement("option");
-  newOption.innerText = monthOptions[i];
-  newOption.setAttribute("value", i);
-  selectMonth.appendChild(newOption);
-}
+// for (let i = 0; i < monthOptions.length; i++){
+//   let newOption = document.createElement("option");
+//   newOption.innerText = monthOptions[i];
+//   newOption.setAttribute("value", i);
+//   selectMonth.appendChild(newOption);
+// }
 
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -127,22 +126,6 @@ function load() {
         eventDiv.classList.add('event');
         eventDiv.innerText = eventForDay.title;
 
-        // let eventTypeSelection = eventForDay.type;
-
-        // switch (eventTypeSelection) {
-        //      case "Study":
-        //        //eventColor = "blue";
-        //        eventDiv.style.backgroundColor = "rgba(26, 77, 145, 1)";
-        //        break;
-        //      case "Social":
-        //        //eventColor = "purple";
-        //        eventDiv.style.backgroundColor = "rgba(160, 20, 196, 1)";
-        //        break;
-        //      default:
-        //        //eventColor = "lightgreen";
-        //        eventDiv.style.backgroundColor = "lightgreen";
-        //        break;
-        //    }
         eventDiv.style.backgroundColor = eventForDay.color;
         daySquare.appendChild(eventDiv);
       }
@@ -240,32 +223,9 @@ function initButtons() {
   document.getElementById('cancelButton').addEventListener('click', closeModal);
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
   document.getElementById('closeButton').addEventListener('click', closeModal);
-  // document.getElementById('editButton').addEventListener('click', openModal);
 }
 
-//Select Year and Month Dropdown Menus
-// selectYear.addEventListener('change', function(){
-//   let currentMonth = today.getMonth();
-//   let currentYear = today.getFullYear();
 
-//   currentYear = parseInt(selectYear.value);
-//   currentMonth = parseInt(selectMonth.value);
-//   load(currentMonth, currentYear);
-// });
-
-// selectMonth.addEventListener('change', function() {
-
-//   let currentMonth = today.getMonth();
-//   let currentYear = today.getFullYear();
-
-//   currentYear = parseInt(selectYear.value);
-//   currentMonth = parseInt(selectMonth.value);
-//   load(currentMonth, currentYear);
-// });
-
-function jump() {
-
-}
 
 initButtons();
 load();
