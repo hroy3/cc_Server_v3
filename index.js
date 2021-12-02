@@ -63,7 +63,7 @@ app.get("/groups", (req, res) =>{
 // //Kaya: Start Uncomment
 // app.post("/createaccount", (req, res) => {
 //     let data = { studentID: req.body.StudentID, FirstName: req.body.FirstName, LastName: req.body.LastName, 
-//         Password: req.body.Password, School: req.body.School, State: req.body.State, Email: req.body.Email, UserType: req.body.UserType };
+//         Pass: req.body.Pass, School: req.body.School, State: req.body.State, Email: req.body.Email, UserType: req.body.UserType };
 //     let sql = `INSERT INTO Accounts SET ?`;
 //     let query = db.query(sql, data, (err, result) => {
 //         if (err) {
@@ -88,7 +88,6 @@ app.get("/groups", (req, res) =>{
 //           });
 //         console.log(coursedata);
 //   });
-
 
 
 // //Kaya: End Uncomment
