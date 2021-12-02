@@ -10,7 +10,7 @@
 /* Style Form text and content */
 body {
     /* Add background image */
-    background: rgb(191, 220, 247);
+    background: #99ccff;
 }
 
 html, body {
@@ -35,11 +35,11 @@ html, body {
     
 }
 
-h1 {
+h2 {
     margin-top: 20px;
-    font-family: 'psyche';
-    text-shadow: 2px 2px 4px white;
+    font-family: 'august';
 }
+
 
 /* Style Log In text */
 .container .title_text{

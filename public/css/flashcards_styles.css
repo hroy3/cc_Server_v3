@@ -11,7 +11,7 @@ body{
   /*font-family: 'Nunito', sans-serif;*/
   font-family: 'chromatica';
   font-size: 1rem;
-  background: rgb(191,220,247);
+  background: #99ccff;
 }
 
 button{
@@ -33,7 +33,7 @@ button:hover{
   
 }
 
-header{background-color: rgb(191,220,247);}
+header{background-color: #99ccff;}
 
 #header{
   display: flex;
@@ -42,7 +42,7 @@ header{background-color: rgb(191,220,247);}
   align-items: center;
   min-height: 80px;
   padding: 0 20px;
-  background: rgb(191,220,247);
+  background: #99ccff;
 }
 
 #header button{

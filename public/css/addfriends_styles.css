@@ -1,53 +1,51 @@
-
-
 .navbar {
-    overflow: hidden;
-    background-color: rgb(191, 220, 247);
-  }
-  
-  .navbar a {
-    float: right;
-    display: block;
-    color: rgb(0, 0, 0);
+  overflow: hidden;
+  background-color: #99ccff;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: 'ropers';
+}
+
+.navbar a.right {
+  float: left;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+form {
+    width: 200px;
+    padding: 45px;
+    border-radius: 25px;
+    border: 5px solid thistle;
+    margin: auto;
+    background-color: whitesmoke;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-family: 'ropers';
+    font-family: 'blackmango';
   }
-  
-  .navbar a.right {
-    float: left;
+
+label{
+      font-family: 'chromatica';
+      font-size: medium;
   }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+
+  input{
+      color: black;
+      background-color:rgb(255, 255, 255);
   }
-  
-  
-  form {
-      width: 200px;
-      padding: 45px;
-      border-radius: 25px;
-      border: 5px solid thistle;
-      margin: auto;
-      background-color: whitesmoke;
-      text-align: center;
-      font-family: 'blackmango';
-    }
-  
-  label{
-        font-family: 'chromatica';
-        font-size: medium;
-    }
-  
-    input{
-        color: black;
-        background-color:rgb(255, 255, 255);
-    }
-  
-    button {
-        color: black;
-        background-color:rgb(255, 255, 255);
-       font-family: 'chromatica';
-    }
+
+  button {
+      color: black;
+      background-color:rgb(255, 255, 255);
+     font-family: 'chromatica';
+  }

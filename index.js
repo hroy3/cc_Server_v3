@@ -56,7 +56,9 @@ app.get("/addfriends", (req, res) =>{
   res.render("./html/addfriends");
 });
 
-
+app.get("/groups", (req, res) =>{
+  res.render("./html/groups");
+});
 
 // //Kaya: Start Uncomment
 // app.post("/createaccount", (req, res) => {
@@ -68,25 +70,24 @@ app.get("/addfriends", (req, res) =>{
 //           throw err;
 //         }
 //       //  res.send(`User Account Created.`);
-          // res.redirect('/home');
+//           res.redirect('/home');
 //       });
 //       console.log(data);
 // });
 
-//Enter courses in Home Page
+// //Enter courses in Home Page
 
 // app.post("/entercourses", (req, res) => {
-//   let coursedata = {class1: req.body.class1, class2: req.body.class2, 
-//        class3: req.body.class3, class4: req.body.class4, class5: req.body.class5}
-//     let sql = `INSERT INTO class SET ?`;
-//     let query = db.query(sql, coursedata, (err, result) => {
-//       if (err) {
-//               throw err;
-//             }
-          
-//         });
-//       console.log(coursedata);
-// });
+//     let coursedata = {class: req.body.wishlist-item}
+//       let sql = `INSERT INTO class SET ?`;
+//       let query = db.query(sql, coursedata, (err, result) => {
+//         if (err) {
+//                 throw err;
+//               }
+            
+//           });
+//         console.log(coursedata);
+//   });
 
 
 
